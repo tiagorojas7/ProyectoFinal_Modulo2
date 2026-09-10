@@ -1,11 +1,22 @@
 import { progreso } from "./progreso.js";
 export class progresoManager {
   constructor() {
-    this.progresos = [];
-    this.nextId = 1;
+    //ESTE METODO FUE CREADO CON AYUDA DE LA IA, me ayudo a alamcenar los registros para que se muesren al cambiar la url
+    const progresosGuardados = localStorage.getItem("gym_progresos");
+    this.progresos = progresosGuardados ? JSON.parse(progresosGuardados) : [];
+
+    //ESTE METODO FUE CREADO CON AYUDA DE LA IA , me ayudo a alamcenar los id y que se muestren al cambiar la url
+    const ultimoIdGuardado = localStorage.getItem("gym_nextId");
+    this.nextId = ultimoIdGuardado ? parseInt(ultimoIdGuardado) : 1;
   }
 
   /* GENERAMOS TODOS LOS METODOS QUE VAMOS A UTILIZAR */
+
+  //ESTA FUNCION FUE CREADA CON AYUA DE LA IA, para poder guardar los datos y que se muestren al cambiar la url
+  guardarEnLocalStorage() {
+    localStorage.setItem("gym_progresos", JSON.stringify(this.progresos));
+    localStorage.setItem("gym_nextId", this.nextId.toString());
+  }
 
   //1) Agregar un nuevo progreso
   /**
@@ -25,6 +36,8 @@ export class progresoManager {
       peso,
     );
     this.progresos.push(nuevoProgreso);
+
+    this.guardarEnLocalStorage();
   }
 
   //2) eliminar un progreso existente
@@ -35,6 +48,7 @@ export class progresoManager {
    */
   eliminarProgreso(id) {
     this.progresos = this.progresos.filter((progreso) => progreso.id !== id);
+    this.guardarEnLocalStorage();
   }
 
   //3) editar un progreso existente
@@ -52,6 +66,7 @@ export class progresoManager {
       progreso.peso = peso;
       progreso.series = series;
       progreso.repeticiones = repeticiones;
+      this.guardarEnLocalStorage();
     }
   }
 
@@ -65,6 +80,7 @@ export class progresoManager {
     const progreso = this.progresos.find((progreso) => progreso.id === id);
     if (progreso) {
       progreso.superada = true;
+      this.guardarEnLocalStorage();
     }
   }
 
