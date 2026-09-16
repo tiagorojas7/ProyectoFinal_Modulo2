@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+body {
+  /* Define la ruta de tu imagen (local o un link de internet) */
+  background-image: url(../public/Gemini_Generated_Image_joftbwjoftbwjoft.jpg);
+
+  background-repeat: no-repeat;
+
+  background-position: center center;
+
+  background-size: cover;
+
+  background-attachment: fixed;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background-color: rgba(24, 23, 23, 0.445);
+  padding: 10px;
+}
+
+h2 {
+  color: #e2dedee3;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background-color: rgba(24, 23, 23, 0.445);
+  padding: 15px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-shadow:
+    3px 3px 6px rgba(0, 0, 0, 0.6),
+    0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.btn {
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.651);
+  color: #ffffff;
+  width: 100%;
+  margin-top: auto;
+}

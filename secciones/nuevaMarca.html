@@ -9,34 +9,78 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../Css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
     <title>GymTracker - Nueva Marca</title>
   </head>
   <body>
-    <header class="bg-dark text-white d-flex align-items-center px-3">
+    <header class="text-white d-flex align-items-center px-3">
       <div class="container">
         <a href="../index.html" class="btn btn-primary mt-2">Inicio</a>
-        <h1 class="display-4 fw-bold text-center">Nueva Marca</h1>
-        <p class="text-secondary fs-5 mb-5 text-center">
+        <h1 class="display-4 fw-bold text-center text-uppercase">
+          Nueva Marca
+        </h1>
+        <p class="text-center mt-5">
           Agrega una nueva marca a tu progreso, vas a poder ingresar tanto
           ejercicio como peso actual que estas manejando, esto se vera reflejado
           en la seccion de progreso
         </p>
       </div>
     </header>
-    <div class="container d-flex flex-column align-items-center mt-5">
-      <button class="btn btn-primary mt-2" id="btnAgregar">
-        AGREGAR NUEVO SEGUIMIENTO
-      </button>
-    </div>
-    <div
-      id="contenedor-formulario"
-      class="container mt-5"
-      style="max-width: 500px"
-    ></div>
-    <!-- generamos un contendedor, par que se muestren las opciones desplegables -->
-    <div class="container d-flex flex-column align-items-center mt-5">
-      <a href="./progreso.html" class="btn btn-primary">VER PROGRESO</a>
-    </div>
+    <main class="flex-grow-1">
+      <div class="container d-flex flex-column align-items-center mt-5">
+        <button class="btn btn-primary mt-2" id="btnAgregar">
+          AGREGAR NUEVO SEGUIMIENTO
+        </button>
+      </div>
+      <div
+        id="contenedor-formulario"
+        class="container mt-5"
+        style="max-width: 500px"
+      ></div>
+      <!-- generamos un contendedor, par que se muestren las opciones desplegables -->
+      <div class="container d-flex flex-column align-items-center mt-5">
+        <a href="./progreso.html" class="btn btn-primary">VER PROGRESO</a>
+      </div>
+    </main>
+    <footer class="footer py-4 mt-5">
+      <div class="container">
+        <ul class="nav d-flex justify-content-between align-items-center gap-3">
+          <li class="nav-item">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/"
+              class="btn btn-outline-dark rounded-circle p-2 d-flex align-items-center justify-content-center"
+            >
+              <i class="bi bi-linkedin fs-4"></i>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              target="_blank"
+              href="https://www.github.com/"
+              class="btn btn-outline-dark rounded-circle p-2 d-flex align-items-center justify-content-center"
+            >
+              <i class="bi bi-github fs-4"></i>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              target="_blank"
+              href="https://mail.google.com/"
+              class="btn btn-outline-dark rounded-circle p-2 d-flex align-items-center justify-content-center"
+            >
+              <i class="bi bi-envelope-fill fs-4"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="../js/app.js" type="module"></script>
   </body>
 </html>

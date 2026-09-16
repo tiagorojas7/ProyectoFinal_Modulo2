@@ -101,4 +101,13 @@ export class progresoManager {
   obtenerProgresosSuperados() {
     return this.progresos.filter((progreso) => progreso.superada === true);
   }
+
+  //7) obtener los progresos pendientes
+  /**
+   * Obtiene los progresos que todavia no fueron superados.
+   * @returns {Array} - Un array con los progresos pendientes.
+   */
+  obtenerProgresosPendientes() {
+    return this.progresos.filter((progreso) => progreso.superada === false);
+  }
 }

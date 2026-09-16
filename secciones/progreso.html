@@ -9,37 +9,80 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../Css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
     <title>GymTracker - Progreso</title>
   </head>
   <body>
-    <header class="bg-dark text-white d-flex align-items-center px-3">
+    <header class="text-white d-flex align-items-center">
       <div class="container">
         <a href="../index.html" class="btn btn-primary mt-2">Inicio</a>
-        <h1 class="display-4 fw-bold text-center">Progreso</h1>
-        <p class="text-secondary fs-5 mb-5 text-center">
-          En esta seccion vas a poder ver el progreso en tus ejercicios y ver
-          los detalles de cada uno de ellos
+        <h1 class="display-4 fw-bold text-center text-uppercase">Progreso</h1>
+        <p class="fs-5 text-center">
+          En esta seccion vas a poder ver los registros de tus ejercicios y ver
+          los detalles de cada uno de ellos.
         </p>
       </div>
     </header>
-    <main>
+    <main class="flex-grow-1">
       <div class="container">
         <div class="d-flex flex-column align-items-center">
-          <h2 class="text-center text-uppercase fw-bold mt-5 mb-3">
-            Tus ultimos trackeos
-          </h2>
-          <a href="./nuevaMarca.html" class="btn btn-primary"
+          <a href="./nuevaMarca.html" class="btn btn-primary mt-3"
             >AÑADIR NUEVA MARCA</a
           >
         </div>
       </div>
+      <div
+        id="contenedor-formulario"
+        class="container mt-5"
+        style="max-width: 500px"
+      ></div>
+
       <div class="container d-flex flex-column mt-5" id="contenedor-progreso">
-        <h2 class="text-primary text-uppercase">Todos tus progresos</h2>
+        <h2 class="text-uppercase">REGISTROS QUE ESPERAN SER SUPERADOS...</h2>
         <ul class="list-group mt-3">
           <li class="list-group-item">No hay registros aun..</li>
         </ul>
       </div>
     </main>
+    <footer class="footer py-4 mt-5">
+      <div class="container">
+        <ul class="nav d-flex justify-content-between align-items-center gap-3">
+          <li class="nav-item">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/"
+              class="btn btn-outline-dark rounded-circle p-2 d-flex align-items-center justify-content-center"
+            >
+              <i class="bi bi-linkedin fs-4"></i>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              target="_blank"
+              href="https://www.github.com/"
+              class="btn btn-outline-dark rounded-circle p-2 d-flex align-items-center justify-content-center"
+            >
+              <i class="bi bi-github fs-4"></i>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              target="_blank"
+              href="https://mail.google.com/"
+              class="btn btn-outline-dark rounded-circle p-2 d-flex align-items-center justify-content-center"
+            >
+              <i class="bi bi-envelope-fill fs-4"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="../js/app.js" type="module"></script>
   </body>
 </html>

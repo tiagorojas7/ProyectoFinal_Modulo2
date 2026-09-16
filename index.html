@@ -9,37 +9,80 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./Css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
     <title>GymTracker - Inicio</title>
   </head>
   <body>
-    <header class="bg-dark text-white py-5">
+    <header class="text-white">
       <div class="container text-center">
         <h1 class="display-4 fw-bold">Bienvenido a GymTracker</h1>
-        <p class="text-secondary fs-5 mt-3">
+        <p class="text-white fs-5 mt-3">
           La web donde vas a poder trackear todo tu progreso en los diferentes
           ejercicios de tu rutina
         </p>
       </div>
     </header>
-    <main>
+    <main class="flex-grow-1">
       <div
         class="container d-flex align-items-center justify-content-center gap-3 mt-5"
       >
         <a href="./secciones/progreso.html" class="btn btn-primary btn-lg">
-          Ver Progreso
+          Ver todos tus progresos
         </a>
-        <a href="./secciones/nuevaMarca.html" class="btn btn-secondary btn-lg">
+        <a href="./secciones/nuevaMarca.html" class="btn btn-primary btn-lg">
           Añadir nueva marca
         </a>
       </div>
 
-      <div class="container mt-5 d-flex flex-column" id="contenedor-progreso">
-        <h2 class="text-primary text-uppercase">Tus Ultimos progresos</h2>
+      <div
+        class="container mt-5 d-flex flex-column"
+        id="contenedor-progreso-superado"
+      >
+        <h2 class="text-uppercase">Tus progresos superados</h2>
         <ul class="list-group mt-3">
           <li class="list-group-item">No hay registros aun..</li>
         </ul>
       </div>
     </main>
+    <footer class="footer py-4 mt-5">
+      <div class="container">
+        <ul class="nav d-flex justify-content-between align-items-center gap-3">
+          <li class="nav-item">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/"
+              class="btn btn-outline-dark rounded-circle p-2 d-flex align-items-center justify-content-center"
+            >
+              <i class="bi bi-linkedin fs-4"></i>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              target="_blank"
+              href="https://www.github.com/"
+              class="btn btn-outline-dark rounded-circle p-2 d-flex align-items-center justify-content-center"
+            >
+              <i class="bi bi-github fs-4"></i>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              target="_blank"
+              href="https://mail.google.com/"
+              class="btn btn-outline-dark rounded-circle p-2 d-flex align-items-center justify-content-center"
+            >
+              <i class="bi bi-envelope-fill fs-4"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="./js/app.js" type="module"></script>
   </body>
 </html>
